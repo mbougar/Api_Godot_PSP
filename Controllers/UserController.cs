@@ -27,7 +27,7 @@ public class UserController(MongoDbService mongoDbService) : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] User user)
     {
-        var existingUser = await mongoDbService.GetUserAsync(user.Username);
+        var existingUser = await mongoDbService.GetUser(user.Username);
         if (existingUser == null || !VerifyPassword(user.PasswordHash, existingUser.PasswordHash))
             return Unauthorized("Invalid credentials");
 

@@ -25,7 +25,7 @@ public class MongoDbService
     }
 
     // Recupera un usuario de la base de datos por nombre de usuario
-    public async Task<User?> GetUserAsync(string username) =>
+    public async Task<User?> GetUser(string username) =>
         await _users.Find(u => u.Username == username).FirstOrDefaultAsync();
 
     // Crea un nuevo usuario en la base de datos
@@ -57,6 +57,6 @@ public class MongoDbService
     }
 
     // Recupera el ranking de los usuarios ordenados por puntuación más alta
-    public async Task<List<User>> GetLeaderboard(int limit = 10) =>
-        await _users.Find(_ => true).SortByDescending(u => u.HighestScore).Limit(limit).ToListAsync();
+    public async Task<List<User>> GetLeaderboard() =>
+        await _users.Find(_ => true).SortByDescending(user => user.HighestScore).ToListAsync();
 }
