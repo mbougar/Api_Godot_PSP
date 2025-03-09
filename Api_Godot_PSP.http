@@ -1,0 +1,6 @@
+@Api_Godot_PSP_HostAddress = http://localhost:5026
+
+GET {{Api_Godot_PSP_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
