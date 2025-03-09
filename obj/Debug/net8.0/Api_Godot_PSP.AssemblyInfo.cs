@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api_Godot_PSP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+741e8e2c7bac6e5255f2355739540fe443f59d49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfc66023cdeec2e17ac027f44a06bfb8de4b8868")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api_Godot_PSP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api_Godot_PSP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
